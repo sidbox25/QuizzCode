@@ -1,5 +1,6 @@
 from random import randint
 import csv
+from pathlib import Path
 
 #todo
 #make multiple correct awnsers necceary
@@ -60,6 +61,5 @@ def frQizz(list):
                 print(ger_list)
 
     print("wow you sucke a bit less")    
-
-vocab_list = readAndMakeList('/home/sidneyverite/Desktop/personal stuff/Berufsschuhle/eng/python/vocab.csv')
+vocab_list = readAndMakeList(str(Path.cwd()) + '/vocab.csv')
 frQizz(vocab_list)
